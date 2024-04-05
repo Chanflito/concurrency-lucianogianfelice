@@ -19,9 +19,32 @@ public class HelloThreads {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("====== Hello Threads    =======");
 //        hello();
-        printHello20();
-        System.out.println("====== Good Bye Threads =======");
-    }
+        printHello20();}
+
+//=======
+//    private static void hello(int numberOfThreads) throws InterruptedException {
+//        var threads = new ArrayList<Thread>();
+//        for (int i = 0; i< numberOfThreads; i++) {
+//            threads.add(new Thread(() -> {
+//                System.out.println("Hello from thread: " + Thread.currentThread().getId());
+//                System.out.println("Good bye from thread: " + Thread.currentThread().getId());
+//            }));
+//        }
+//        for (Thread thread1 : threads) {
+//            thread1.start();
+//        }
+//        for (Thread thread : threads) {
+//            thread.join();
+//        }
+//    }
+//
+//
+//    public static void main(String[] args) throws InterruptedException {
+//        System.out.println("====== Hello Threads    =======");
+//        hello(10);
+//>>>>>>> 2a12993189b187e40615437f6aade6dc3a431d18
+//        System.out.println("====== Good Bye Threads =======");
+//    }
 
     private static void sleep(int ms) {
         try {
